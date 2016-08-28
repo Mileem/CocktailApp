@@ -14,9 +14,8 @@ angular.module('cocktailAppApp')
 
     // Public API here
     return {
-      getQueryURL: function (querySPARQL) {
-        querySPARQL = 'SELECT DISTINCT * WHERE { ' + querySPARQL + '}';
-        var queryURL = baseURL + '?' + 'query='+ encodeURIComponent(querySPARQL) + '&format=json';
+      getQueryURL: function (query) {
+        var queryURL = baseURL + '?' + 'query='+ encodeURIComponent(query) + '&format=json';
         return queryURL;
       }
     };
