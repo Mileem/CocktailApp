@@ -1,3 +1,8 @@
+<div>
+  <button id="alcoolType" type="button" name="btn btn-info button" resource="http://dbpedia.org/class/yago/CocktailsWithBitters" ng-click="getCocktails($event)">Bitters</button>
+  <button id="alcoolType" type="button" name="btn btn-info button" resource="http://dbpedia.org/class/yago/CocktailsWithGin" ng-click="getCocktails($event)">Gin</button>
+  <button id="alcoolType" type="button" name="btn btn-info button" resource="http://dbpedia.org/class/yago/CocktailsWithPunsch" ng-click="getCocktails($event)">Punsch</button>
+</div>
 <div class="table-responsive">
   <table class="table">
     <tr ng-repeat="cocktail in cocktails track by $index">
